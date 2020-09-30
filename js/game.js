@@ -2,9 +2,9 @@ var spotOne = document.getElementById('spotOne');
 var spotTwo = document.getElementById('spotTwo');
 var spotThree = document.getElementById('spotThree');
 var guessing = false;
-var speed = 300; // 속도 낮을수록 빠름
+var speed = 260; // 속도 낮을수록 빠름
 var speedFactor = 500;
-var shuffles = 5;
+var shuffles = 20;
 var score = 0;
 var highScores;
 
@@ -128,7 +128,7 @@ var Responder = {
 
   winNHS: function() {
     this.popup.setAttribute('class', 'popup');
-    this.feedback.innerHTML = '<p class="win">당첨금을 무사히 되찾았다!</p>';
+    this.feedback.innerHTML = '<p class="win"><a href="../index.html">당첨금을 무사히 되찾았다!</a></p>';
   },
 
   lose: function() {

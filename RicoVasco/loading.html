@@ -22,19 +22,21 @@
     <div><img src="../images/intro/10.png" alt=""></div>
 
     <div class="lastImg">
-      마지막
+      <img src="../images/intro/10.png" alt="">
+      <br>
+      <button class="btn" onclick="location.href='../RicoVasco/meet.html'">당신은...?</button>
     </div>
   </div>
 
   <script src="../js/jquery-3.5.1.js"></script>
   <script>
 $(function () {
-    setTimeout(playSlideShow, 1000);
+    setTimeout(playSlideShow, 3000);
     function playSlideShow() {
         var currImgContainer = $('.showImg');
         if (!$(currImgContainer).hasClass('lastImg')) {
             $('.showImg').removeClass('showImg').next().addClass('showImg');
-            setTimeout(playSlideShow, 1000);
+            setTimeout(playSlideShow, 3000);
         }
     }
 });

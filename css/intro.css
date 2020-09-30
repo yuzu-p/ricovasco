@@ -2,24 +2,64 @@ body {
   background-color: black;
 }
 
-#intro-box {
-  margin-top: 150px;
-  width: 100%;
-  text-align: center;
-}
-
-#intro-box img {
-  width: 70%;
-}
-
 .slideShow > div:not(.showImg) {
   display: none;
 }
 .showImg {
+  margin-top: 150px;
+  width: 100%;
   text-align: center;
   display: block;
 }
 
 .showImg img {
   width: 80%;
+}
+
+.lastImg .btn {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 0.5em 1em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.lastImg .btn::before,
+.lastImg .btn::after {
+  background: #920097;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+.lastImg .btn:hover {
+	cursor: pointer;
+}
+
+.lastImg .btn {
+  overflow: hidden;
+}
+
+.lastImg .btn::after {
+  height: 100%;
+  left: -35%;
+  top: 0;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0;
+}
+
+.lastImg .btn:hover:after {
+  height: 100%;
+  width: 135%;
+}
+
+.lastImg .btn:focus {
+	outline: none;
 }
