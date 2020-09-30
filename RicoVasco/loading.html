@@ -30,7 +30,8 @@
 
   <script src="../js/jquery-3.5.1.js"></script>
   <script>
-$(function () {
+    $(document).ready(function(){
+      $(function () {
     setTimeout(playSlideShow, 3000);
     function playSlideShow() {
         var currImgContainer = $('.showImg');
@@ -40,6 +41,8 @@ $(function () {
         }
     }
 });
+    }
+
 
   </script>
 </body>
