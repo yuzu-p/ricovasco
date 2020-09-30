@@ -2,11 +2,38 @@ body {
   background-color: black;
 }
 
+#wrapper {
+  margin-top: 130px;
+}
+
+.btn-box {
+  width: 80%;
+  text-align: right;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.btn-box .next-btn {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.3em 0.8em;
+}
+
+.btn-box .next-btn:hover {
+  cursor: pointer;
+}
+
+.btn-box .next-btn:focus {
+  outline: none;
+}
+
 .slideShow > div:not(.showImg) {
   display: none;
 }
 .showImg {
-  margin-top: 150px;
   width: 100%;
   text-align: center;
   display: block;
@@ -26,7 +53,6 @@ body {
   margin: 1em auto;
   padding: 0.5em 1em;
   position: relative;
-  text-transform: uppercase;
 }
 
 .lastImg .btn::before,
