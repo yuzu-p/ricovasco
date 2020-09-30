@@ -1,0 +1,26 @@
+@font-face {
+	font-family: 'kopubdotum';
+	src: local("☺"), url("/fonts/KOPUBWORLD-DOTUM.woff") format("woff");
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: black;
+	font-family:"kopubdotum", sans-serif;
+}
+
+#wrapper {
+	width: 700px;
+	background : white;
+	margin: auto;
+	margin-top: 100px;
+	padding: 5px;
+	background: white;
+}
+
+@media(max-width: 768px) {
+	#wrapper {
+		margin-top: 300px;
+	}
+}

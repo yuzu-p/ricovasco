@@ -1,0 +1,132 @@
+#tic_box {
+	padding: 10px;
+	border: 2px solid black;
+	text-align: center;
+}
+
+#info_box {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	width: 450px;
+	height: 100px;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 12px;
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 12px;
+	text-align: center;
+	box-shadow: -5px 5px 0px 3px black;
+}
+
+#info_box .text_box {
+	margin-top: 22px;
+	margin-bottom: 20px;
+}
+
+#info_box .fst {
+	font-size: 1.1em;
+}
+
+#info_box .snd {
+	font-size: 2em;
+}
+
+#address_box {
+	font-family: 'Source Serif Pro', serif;
+	font-size: 1em;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: 800;
+}
+
+#address_box .emp {
+	font-size: 2.5em;
+}
+
+#num_box {
+	padding: 10px;
+	border: 2px solid black;
+}
+
+#num_box input {
+	padding: 0px;
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	border: 2px solid black;
+	border-radius: 100px;
+	margin-bottom: 5px;
+	font-family: 'Source Serif Pro', serif;
+	font-size: 1.5em;
+	font-weight: 800;
+}
+
+#num_box input:focus {
+	outline: none;
+}
+
+#bet_box {
+	width: 700px;
+	margin: auto;
+}
+
+
+/* GENERAL BUTTON STYLING */
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 0.5em 1em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+button::before,
+button::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+	cursor: pointer;
+  color: black;
+}
+
+.bet_button {
+  overflow: hidden;
+}
+
+.bet_button::after {
+  height: 100%;
+  left: -35%;
+  top: 0;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0;
+}
+
+.bet_button:hover:after {
+  height: 100%;
+  width: 135%;
+}
+
+.bet_button:focus {
+	outline: none;
+}
