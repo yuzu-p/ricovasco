@@ -146,23 +146,34 @@ h1{
   background-image: linear-gradient(to bottom, #015773, #6acef2);
   text-decoration: none;
 }
+
 .win a {
   text-decoration: none;
   font-size: 30px;
   line-height: 150%;
-  color: gold;
+  color: white;
   font-family: 'Do Hyeon', sans-serif;
 }
+
+.win .result {
+  font-size: 30px;
+  color: gold;
+}
+
 
 .lose {
   font-size: 30px;
   line-height: 150%;
-  color: red;
+  color:white;
   font-family: 'Do Hyeon', sans-serif;
 }
 
+.lose .result {
+  color: red;
+}
+
 .lose a {
-  color: white;
+  color: red;
   text-decoration: none;
   font-size: 20px;
 }

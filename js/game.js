@@ -128,12 +128,12 @@ var Responder = {
 
   winNHS: function() {
     this.popup.setAttribute('class', 'popup');
-    this.feedback.innerHTML = '<p class="win"><a href="../index.html">당첨금을 무사히 되찾았다!</a></p>';
+    this.feedback.innerHTML = '<p class="win"><span class="result">SUCCESS!</span><br><a href="../index.html">당첨금을 무사히 되찾았다!</a></p>';
   },
 
   lose: function() {
     this.popup.setAttribute('class', 'popup');
-    this.feedback.innerHTML = '<p class="lose">당첨금을 빼앗겼다...<br><a href="find.html">뭐라고? 다시 할래!</a></p>';
+    this.feedback.innerHTML = '<p class="lose"><span class="result">FAIL...</span><br>당신은 로또 회사와의 결착 논란으로 잡혀갔습니다...<br><a href="find.html">뭐라고? 다시 할래!</a></p>';
   },
 
   spotOneClick: function() {
