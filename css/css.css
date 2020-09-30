@@ -27,16 +27,15 @@ h1{
   position: fixed;
   color: white;
   line-height: 1.3em;
-  border-radius: 10px;
   border: 2px solid #fff;
   text-align: -webkit-center;
-  box-shadow: 0 0 0 4px #003459, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+  /* box-shadow: 0 0 0 4px #003459, 2px 1px 6px 4px rgba(10, 10, 0, 0.5); */
   top: 0%;
   right: 0%;
   left: 0%;
   padding: 10px;
   margin-top: 50px;
-  background: #003459;
+  background: #5f0063;
 }
 
 .highlight {
@@ -151,36 +150,30 @@ h1{
   text-decoration: none;
   font-size: 20px;
   line-height: 150%;
-  color: green;
+  color: gold;
   font-family: 'Do Hyeon', sans-serif;
 }
 
-a[class^="win"]:hover{
-  text-decoration: none;
-  color: gold;
-}
-
 .lose {
-  text-decoration: none;
   font-size: 20px;
   line-height: 150%;
   color: red;
   font-family: 'Do Hyeon', sans-serif;
 }
 
-.lose:hover {
+.lose a {
+  color: white;
   text-decoration: none;
-  color: gold;
+  font-size: 15px;
 }
 
 .popup {
   animation: popupFeedBack 1s;
   animation-fill-mode: forwards;
-  height: 300px;
-  width: 450px;
+  height: 200px;
+  width: 70%;
   background-color: black;
-  border: 5px groove blue;
-  border-radius: 25px;
+  border: 5px solid white;
   position: fixed;
   top: 0%;
   right: 0%;
@@ -216,4 +209,8 @@ a[class^="win"]:hover{
 
 #heat {
   width: 100%;
+}
+
+#bgm {
+  text-align: center;
 }
