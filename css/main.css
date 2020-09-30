@@ -74,15 +74,15 @@
 
 
 /* GENERAL BUTTON STYLING */
-button,
-button::after {
+.bet_button,
+.bet_button::after {
   -webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
   -o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
-button {
+.bet_button {
   background: none;
   border: 2px solid #fff;
   color: #fff;
@@ -95,15 +95,15 @@ button {
   text-transform: uppercase;
 }
 
-button::before,
-button::after {
+.bet_button::before,
+.bet_button::after {
   background: #fff;
   content: '';
   position: absolute;
   z-index: -1;
 }
 
-button:hover {
+.bet_button:hover {
 	cursor: pointer;
   color: black;
 }
@@ -129,4 +129,70 @@ button:hover {
 
 .bet_button:focus {
 	outline: none;
+}
+
+/* 모달창 */
+
+#modal {
+	display: none;
+	position:fixed; 
+	width:100%;
+	height:100%;
+  top:0; left:0; 
+  background:rgba(0,0,0,0.3);
+}
+.modal-con{
+	display: none;
+  position:fixed;
+	top:50%;
+	left:50%;
+  transform: translate(-50%,-50%);
+  width: 70%;
+  background:#fff;
+}
+.modal1 .title{
+	margin: 0px;
+	font-size:25px;
+	font-weight: 800; 
+	padding: 10px;
+	padding-left:20px;
+  background : gold;
+}
+.modal2 .title{
+	margin: 0px;
+	font-size:25px; 
+	font-weight: 800; 
+	padding: 10px; 
+	color: white;
+	padding-left:20px;
+  background : rgba(204, 11, 11, 0.945);
+}
+.modal-con .con{
+	font-size:20px;
+	line-height:1.3;
+  padding: 20px;
+}
+
+.next-button {
+	background: none;
+  border: 2px solid black;
+  color: black;
+  display: inline-block;
+  font-size: 15px;
+	font-weight: bold;
+	width: 30%;
+	max-width: 100px;
+	height: 50px;
+	margin-top: 10px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.next-button:hover {
+	cursor: pointer;
+}
+
+.next-one:hover {
+	color:white;
+	background-color: #5f0063;
 }

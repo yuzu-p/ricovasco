@@ -148,14 +148,14 @@ h1{
 }
 .win {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 150%;
   color: gold;
   font-family: 'Do Hyeon', sans-serif;
 }
 
 .lose {
-  font-size: 20px;
+  font-size: 30px;
   line-height: 150%;
   color: red;
   font-family: 'Do Hyeon', sans-serif;
@@ -164,13 +164,13 @@ h1{
 .lose a {
   color: white;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .popup {
   animation: popupFeedBack 1s;
   animation-fill-mode: forwards;
-  height: 200px;
+  height: 150px;
   width: 70%;
   background-color: black;
   border: 5px solid white;

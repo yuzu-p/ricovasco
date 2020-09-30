@@ -7,10 +7,38 @@
   <link href="../css/intro.css" rel="stylesheet">
 </head>
 <body>
-  <div id="intro-box">
-    <img src="../images/intro.gif">
-    <br>
-    <a href="find.html">이건게임</a>
+  <div class="slideShow" id="slideshow">
+    <div class="showImg"><img src="../images/intro/1.png" alt=""></div>
+
+    <div><img src="../images/intro/2.png" alt=""></div>
+
+    <div><img src="../images/intro/3.png" alt=""></div>
+    <div><img src="../images/intro/4.png" alt=""></div>
+    <div><img src="../images/intro/5.png" alt=""></div>
+    <div><img src="../images/intro/6.png" alt=""></div>
+    <div><img src="../images/intro/7.png" alt=""></div>
+    <div><img src="../images/intro/8.png" alt=""></div>
+    <div><img src="../images/intro/9.png" alt=""></div>
+    <div><img src="../images/intro/10.png" alt=""></div>
+
+    <div class="lastImg">
+      마지막
+    </div>
   </div>
+
+  <script src="../js/jquery-3.5.1.js"></script>
+  <script>
+$(function () {
+    setTimeout(playSlideShow, 1000);
+    function playSlideShow() {
+        var currImgContainer = $('.showImg');
+        if (!$(currImgContainer).hasClass('lastImg')) {
+            $('.showImg').removeClass('showImg').next().addClass('showImg');
+            setTimeout(playSlideShow, 1000);
+        }
+    }
+});
+
+  </script>
 </body>
 </html>

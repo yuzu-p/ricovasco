@@ -11,3 +11,15 @@ body {
 #intro-box img {
   width: 70%;
 }
+
+.slideShow > div:not(.showImg) {
+  display: none;
+}
+.showImg {
+  text-align: center;
+  display: block;
+}
+
+.showImg img {
+  width: 80%;
+}
