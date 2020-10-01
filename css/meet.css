@@ -1,0 +1,99 @@
+@font-face {
+  src : url("../font/DungGeunMo.ttf");
+  font-family: "DungGeunMo";
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.josh {
+  display: block;
+  text-align: center;
+}
+
+.josh-inv {
+  display: none;
+}
+
+.josh img {
+  width: 50%;
+  max-width: 400px;
+}
+
+#text-show > div:not(.text-v) {
+  display: none;
+}
+
+.text-box {
+  border: 4px solid white;
+  width: 40%;
+  margin: auto;
+  height: 170px;
+  padding: 30px;
+  font-size: 40px;
+  font-family: DungGeunMo;
+}
+
+p {
+  margin: 0px;
+}
+
+.invisible {
+  display: none;
+}
+
+.button-box {
+  width: 40%;
+  text-align: right;
+  padding-top: 10px;
+  padding-left: 68px;
+  margin: auto;
+}
+
+.button-box button {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0.3em 0.8em;
+}
+
+.button-box button:hover {
+  cursor: pointer;
+}
+
+.button-box button:focus {
+  outline: none;
+}
+
+.button-box .next-btn:hover {
+  color: black;
+  background: white;
+}
+
+.button-box .fight-btn:hover {
+  color: white;
+  background:  #5f0063;
+}
+
+p.typing-txt{display: none;}
+
+@media (max-width: 728px) {
+  .josh img {
+    width: 90%;
+  }
+
+  .text-box {
+    font-size: 35px;
+    width: 80%;
+    padding: 20px;
+  }
+
+  .button-box {
+    width: 80%;
+    padding-left: 48px;
+  }
+}
