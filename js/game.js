@@ -2,9 +2,9 @@ var spotOne = document.getElementById('spotOne');
 var spotTwo = document.getElementById('spotTwo');
 var spotThree = document.getElementById('spotThree');
 var guessing = false;
-var speed = 260; // 속도 낮을수록 빠름
+var speed = 220; // 속도 낮을수록 빠름
 var speedFactor = 500;
-var shuffles = 20;
+var shuffles = 30;
 var score = 0;
 var highScores;
 
